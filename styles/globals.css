@@ -34,7 +34,7 @@
     @apply ml-6 text-2xl md:ml-10 md:text-3xl focus:outline-none;
   }
   main{
-    @apply relative h-[90vh];
+    @apply h-[90vh] relative ;
 
   }
   .textContainer {
@@ -95,7 +95,7 @@
     @apply flex flex-wrap w-full my-28 sm:px-20;
   }
   .skillWrapper > div {
-    @apply flex justify-center w-full lg:w-1/2 h-[70vh] md:items-center;
+    @apply h-[70vh] flex justify-center w-full lg:w-1/2  md:items-center;
   }
   .skillWrapper > div > svg{
     font-size : 20rem;
@@ -104,10 +104,10 @@
     @apply flex justify-center w-full;
   }
   .iconsContanier{
-    @apply flex flex-wrap max-w-[80%] justify-center;
+    @apply max-w-[80%] flex flex-wrap  justify-center;
   }
   .iconBox{
-    @apply flex flex-col m-0 w-full text-center max-w-[16%] mb-4 items-center justify-start mr-4;
+    @apply max-w-[16%] flex flex-col m-0 w-full text-center  mb-4 items-center justify-start mr-4;
     flex-basis: 16%;
   }
   .iconBox > span{
@@ -120,7 +120,7 @@
     @apply object-cover w-full h-full;
   }
   .con{
-    @apply relative h-[80vh] lg:h-[70vh];
+    @apply h-[80vh] lg:h-[70vh] relative ;
   }
   .con-wrapper{
     @apply flex flex-col p-12 pt-24 lg:flex-row;
