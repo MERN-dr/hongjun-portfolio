@@ -1,0 +1,20 @@
+{
+    "home": "home",
+    "home.namelogo": "Hongjun Kim", 
+    "home.greeting": "Nice to meet you",
+    "home.skill":  "Skill",
+    "home.project": "Project",
+    "home.contact": "Contact",
+    "home.job": "Web-Developer",
+    "home.contactme": "contact me",
+    "introduction.p" : "I design and develop websites and web applications using JavaScript, Typescript and PHP. When dealing with a project I pay attention to the smallest details addressing problems with patience. Web design and development help me to free my creative mind and allow me satisfy my desire towards constant self growth.",
+    "contact.title" : "Let's discuss in more detail",
+    "contact.b": "What’s my story? ",
+    "contact.story": "You can reach me via email or find me on social networks. I would love to hear from you!",
+    "contact.name" : "Name",
+    "contact.subject" : "Subject",
+    "contact.email" : "Email",
+    "contact.message" : "Messsage",
+    "contact.touch" : "Get in touch",
+    "contact.sending" : "sending ..."
+}

@@ -1,16 +1,261 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply h-screen font-serif text-gray-900 bg-gray-100 dark:text-gray-100 dark:bg-gray-900;
+  }
+}
+@layer components {
+  /* scroll */
+  .scrollToTop svg{
+    @apply text-4xl;
+  }
+
+  /* header */
+  .header {
+    @apply h-[10vh] flex items-center px-10 py-4 md:px-20 text-lg justify-between;
+
+  }
+  .header-logo {
+    @apply font-black md:text-2xl;
+  }
+  .header > ul {
+    @apply justify-center flex-1 hidden space-x-5 md:flex md:mr-28;
+  }
+  .header > ul > li {
+    @apply cursor-pointer;
+  }
+  .header-button{
+    @apply z-50;
+  }
+  .header-button > button{
+    @apply ml-6 text-2xl md:ml-10 md:text-3xl focus:outline-none;
+  }
+  main{
+    @apply relative h-[90vh];
+
+  }
+  .textContainer {
+    @apply flex flex-col h-full px-6 py-4 sm:py-28 lg:px-52;
+  }
+  .textContainer-top {
+    @apply flex items-center justify-between text-lg md:text-2xl;
+  }
+  .textContainer-middle {
+    @apply grid flex-1 place-items-center;
+  }
+  .textContainer-middle > span {
+    @apply text-5xl font-black tracking-widest md:text-7xl lg:text-9xl;
+  }
+  .textContainer-bottom {
+    @apply flex items-center justify-between;
+  }
+  .textContainer-bottom > button {
+    @apply p-2 text-base tracking-wide text-white lowercase bg-gray-900 rounded-lg lg:px-6 lg:py-3 lg:text-lg;
+  }
+  .textContainer-bottom > p {
+    @apply text-sm font-semibold lg:text-2xl;
+  }
+  
+  .textContainer-bottom > p > span {
+    @apply text-green-600 cursor-pointer;
+  }
+
+  /* profileContainer */
+  .profileWrapper {
+    @apply absolute flex justify-end w-full text-center place-items-center;
+    top: 0.5em;
+    right: 0.5em;
+  }
+  .profile {
+    @apply h-[468px] w-[350px] md:h-[550px] md:w-[600px] object-contain;
+    border-radius: 57% 43% 59% 41% / 43% 16% 84% 57%;
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+
+  /* selfIntroduction */
+  .selfIntroduction{
+    @apply h-[100vh] ;
+  }
+  .profileContainer{
+    @apply flex items-center justify-center h-full sm:px-20 md:px-32 lg:px-40;
+  }
+  .profileContainer > span{
+    @apply px-4 mb-40 opacity-50;
+  }
+  .profileContainer > p {
+    @apply ml-5 first-letter:text-5xl sm:text-lg lg:first-letter:text-7xl lg:text-3xl;
+    letter-spacing: 0.1em;
+    word-spacing: 0.1em;
+  }
+  .skillWrapper{
+    @apply flex flex-wrap w-full my-28 sm:px-20;
+  }
+  .skillWrapper > div {
+    @apply flex justify-center w-full lg:w-1/2 h-[70vh] md:items-center;
+  }
+  .skillWrapper > div > svg{
+    font-size : 20rem;
+  }
+  .iconWrapper{
+    @apply flex justify-center w-full;
+  }
+  .iconsContanier{
+    @apply flex flex-wrap max-w-[80%] justify-center;
+  }
+  .iconBox{
+    @apply flex flex-col m-0 w-full text-center max-w-[16%] mb-4 items-center justify-start mr-4;
+    flex-basis: 16%;
+  }
+  .iconBox > span{
+    @apply mb-4 text-xs sm:text-sm;
+  }
+  .iconBox > div{
+    @apply w-[60%];
+  }
+  .icon{
+    @apply object-cover w-full h-full;
+  }
+  .con{
+    @apply relative h-[80vh] lg:h-[70vh];
+  }
+  .con-wrapper{
+    @apply flex flex-col p-12 pt-24 lg:flex-row;
+  }
+  .con-left{
+    @apply flex-1 lg:pl-16;
+  }
+  .con-right{
+    @apply flex flex-col items-center justify-center flex-1;
+  }
+  .con-title{
+    @apply w-4/5 text-xl sm:text-6xl ; 
+  }
+  .con-info{
+    @apply py-8;
+  }
+  .con-info-item{
+    @apply flex items-center w-3/4 my-10;
+  }
+  .con-info-item > svg{
+    @apply mr-4 text-3xl;
+  }
+  .con-icon{
+    @apply w-8 h-8 mr-5;
+  }
+  .con-right > form{
+    @apply mt-5;
+  }
+  .con-right > form > input{
+    @apply w-1/2 h-12 pl-3 my-3 text-sm border-none;
+  }
+  .con-right > form > textarea{
+    @apply w-full pl-3 my-3 text-sm;
+  }
+  .con-right > form > button{
+    @apply p-4 text-white bg-green-400 border-none cursor-pointer;
+  }
+  .project{
+    @apply h-[80vh] flex content-center justify-center;
+    cursor: ;
+  }
+  #project{
+    @apply relative bottom-4 ;
+  }
+  .cursor{
+    @apply relative top-0 left-0 w-8 h-8 bg-black rounded-2xl mix-blend-difference;
+    background-color: white;
+  }
+  .links{
+    @apply flex items-center content-center justify-center sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl;
+  }
+  .link-item{
+    @apply mx-4;
+  }
+
+  /* cursor */
+  .page-wrapper{
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .project-list{
+    mix-blend-mode: difference;
+    z-index: 1;
+  }
+  .project-list:hover .project-title{
+    opacity: 0.1;
+  }
+  .project-item{
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px
+  }
+  .project-item:hover .project-title{
+    opacity: 1;
+  }
+  .project-title{
+    @apply  text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl;
+    transition: opacity .35s cubic-bezier(.77, 0, 0.175, 1);
+    /* font-size: 80px; */
+    color: #eee;
+    font-weight: 300;
+    z-index: 2;
+  }
+  .project-media{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .project-media img{
+    opacity: 0;
+    position: absolute;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    max-height: 70%;
+    max-width: 80%;
+    object-fit: contain;
+    pointer-events: none;
+  }
+  .project-media img.is-active{
+    opacity: 1;
+  }
+
+
+
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* after */
+.header-button{
+  justify-content: space-around;
+  position: fixed;
+  right: 0rem;
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+
+}
+.header-button::after{
+  content:'';
+  width:60px;
+  height: 2px;
+  background:#111827;
+  margin-left:5px;
 }
 
-* {
-  box-sizing: border-box;
-}
