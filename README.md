@@ -1,6 +1,6 @@
 # 🙋🏻‍♂️ 포트폴리오
 
-#### See the [Demo here](https://concernteam.tk).
+#### See the [Demo here](https://hongjun.concernteam.tk).
 
 ## 프로젝트 내용
 개인 포트폴리오를 Next Js 와 Typescript 그리고 TailwindCSS를 사용하여 제작하였습니다.
