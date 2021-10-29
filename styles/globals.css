@@ -15,7 +15,8 @@
 
   /* header */
   .header {
-    @apply h-[10vh] flex items-center px-10 py-4 md:px-20 text-lg justify-between;
+    @apply flex items-center justify-between px-10 py-4 text-lg md:px-20;
+    height: 10vh;
 
   }
   .header-logo {
@@ -34,7 +35,8 @@
     @apply ml-6 text-2xl md:ml-10 md:text-3xl focus:outline-none;
   }
   main{
-    @apply h-[90vh] relative ;
+    @apply relative;
+    height: 90vh;
 
   }
   .textContainer {
@@ -69,16 +71,16 @@
     top: 0.5em;
     right: 0.5em;
   }
-  .profile {
+  /* .profile {
     @apply h-[468px] w-[350px] md:h-[550px] md:w-[600px] object-contain;
     border-radius: 57% 43% 59% 41% / 43% 16% 84% 57%;
     opacity: 0.8;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  }
+  } */
 
   /* selfIntroduction */
   .selfIntroduction{
-    @apply h-[100vh] ;
+    height: 100vh;
   }
   .profileContainer{
     @apply flex items-center justify-center h-full sm:px-20 md:px-32 lg:px-40;
@@ -95,7 +97,8 @@
     @apply flex flex-wrap w-full my-28 sm:px-20;
   }
   .skillWrapper > div {
-    @apply h-[70vh] flex justify-center w-full lg:w-1/2  md:items-center;
+    @apply flex justify-center w-full lg:w-1/2 md:items-center;
+    height: 70vh;
   }
   .skillWrapper > div > svg{
     font-size : 20rem;
@@ -104,23 +107,27 @@
     @apply flex justify-center w-full;
   }
   .iconsContanier{
-    @apply max-w-[80%] flex flex-wrap  justify-center;
+    @apply flex flex-wrap justify-center;
+    max-width: 80%
   }
   .iconBox{
-    @apply max-w-[16%] flex flex-col m-0 w-full text-center  mb-4 items-center justify-start mr-4;
+    @apply flex flex-col items-center justify-start w-full m-0 mb-4 mr-4 text-center;
+    max-width: 16%;
     flex-basis: 16%;
   }
   .iconBox > span{
     @apply mb-4 text-xs sm:text-sm;
   }
   .iconBox > div{
-    @apply w-[60%];
+    width: 60%
   }
   .icon{
     @apply object-cover w-full h-full;
   }
   .con{
-    @apply h-[80vh] lg:h-[70vh] relative ;
+    @apply relative ;
+    /* lg:h-[70vh]  */
+    height: 80vh;
   }
   .con-wrapper{
     @apply flex flex-col p-12 pt-24 lg:flex-row;
@@ -159,8 +166,8 @@
     @apply p-4 text-white bg-green-400 border-none cursor-pointer;
   }
   .project{
-    @apply h-[80vh] flex content-center justify-center;
-    cursor: ;
+    @apply flex content-center justify-center;
+    height: 80vh;    
   }
   #project{
     @apply relative bottom-4 ;
@@ -236,11 +243,7 @@
   .project-media img.is-active{
     opacity: 1;
   }
-
-
-
 }
-
 /* after */
 .header-button{
   justify-content: space-around;
