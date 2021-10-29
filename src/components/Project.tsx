@@ -11,20 +11,20 @@ function Project() {
             <div className="project">
                 <div className="links">
                     <div className="link-item">
-                        <a href="https://github.com/javajspproject"  target="_blank" rel="author" title="Java JSP" >
+                        <a href="https://github.com/javajspproject"  target="_blank" rel="noreferrer" title="Java JSP" >
                             <span onMouseEnter={() => setActiveIndex(0)} onMouseLeave={() => setActiveIndex(-1)}>Web</span>
                         </a>
-                        <a href="https://github.com/javajspproject"  target="_blank" rel="author" title="Java JSP" >
+                        <a href="https://github.com/javajspproject"  target="_blank" rel="noreferrer" title="Java JSP" >
                             <span onMouseEnter={() => setActiveIndex(1)} onMouseLeave={() => setActiveIndex(-1)}>site</span>
                         </a>
                     </div>
                     <div className="link-item">
-                        <a href="https://github.com/php-organi"  target="_blank" rel="author" title="PHP" >
+                        <a href="https://github.com/php-organi"  target="_blank" rel="noreferrer" title="PHP" >
                             <span onMouseEnter={() => setActiveIndex(2)} onMouseLeave={() => setActiveIndex(-1)}>Link</span>
                         </a>
                     </div>
                     <div  className="link-item">
-                        <a href="https://github.com/MERN-dr"  target="_blank" rel="author" title="MERN" >
+                        <a href="https://github.com/MERN-dr"  target="_blank" rel="noreferrer" title="MERN" >
                             <span onMouseEnter={() => setActiveIndex(3)} onMouseLeave={() => setActiveIndex(-1)}>Branding</span>
                         </a>
                     </div>

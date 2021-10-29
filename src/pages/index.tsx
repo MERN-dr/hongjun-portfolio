@@ -12,7 +12,7 @@ import Contact from "src/components/Contact";
 import Project from "src/components/Project";
 import Cursor from "src/components/Cursor";
 
-function index() {
+function Index() {
   const [ScrollY, setScrollY] = useState(0);  
   const router = useRouter();
   const {locale, locales, defaultLocale} = router;
@@ -39,4 +39,4 @@ function index() {
   )
 }
 
-export default index
+export default Index

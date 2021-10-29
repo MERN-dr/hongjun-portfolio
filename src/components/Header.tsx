@@ -42,7 +42,7 @@ function Header() {
             </ul>
             <div className="header-button">
                 <button>
-                    <a href="https://github.com/MERN-dr"  target="_blank" rel="author" >
+                    <a href="https://github.com/MERN-dr"  target="_blank" rel="noreferrer" >
                         <GoMarkGithub/>
                     </a>
                 </button>
